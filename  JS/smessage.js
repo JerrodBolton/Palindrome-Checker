@@ -73,3 +73,34 @@ let secretMessage = () => {
 
   verification();
 };
+
+// I need to make a function that will collect the values of the words that someone types in the input field
+
+// let palindromeWord = document.getElementById("palindrome").value;
+
+let palindromeWord = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
+//  // Create a new page or add your code to the strings.html from a previous assignment.
+// Create a loop and add a prompt for the user to enter a string.
+
+ console.log(typeof(palindromeWord));
+ while (palindromeWord !== "exit") {
+  let word = palindromeWord.replace(/\s/g, "");
+  let reverseWord = word.split("").reverse().join("");
+  if (word === reverseWord) {
+    alert("This word is a palindrome");
+  } else {
+    alert("This word is not a palindrome");
+  }
+  palindromeWord = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
+};
+
+// After you notify the user if the string was a palindrome or not, give the user the option of entering another word.
+// If the user is done entering words, exit out of the loop.
+
+// Check if the string is spelled the same forwards and backward (hint, remove the spaces before checking).
+
+// Have at least 2 creative elements – images, fonts, background color, etc. 
+// Create a nice look and feel for the user and make a great user experience!
+// Comment above almost every line of your code, both HTML and JavaScript!
+// Put a comment at the top of your HTML file with your name in it.
+// Take one or more screen prints of your application running.
