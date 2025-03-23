@@ -78,14 +78,16 @@ let secretMessage = () => {
 
 // let palindromeWord = document.getElementById("palindrome").value;
 
-let palindromeWord = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
+let word = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
 //  // Create a new page or add your code to the strings.html from a previous assignment.
 // Create a loop and add a prompt for the user to enter a string.
 //  This is check to see what type of data the user is inputting
- console.log(typeof(palindromeWord));
+//  console.log(typeof(palindromeWord));
 //  this is make the loop to check if the word is a palindrome
 //  this is a while loop that checks if they type the word exit to leave the program
- while (palindromeWord !== "exit") {
+ console.log(word);
+ 
+ while ( word !== "exit") {
   // this is make a var that will take the word and split it into an array and then reverse it and then join it back together
   let reverseWord = word.split("").reverse().join("");
   // this is a check to see what the word is a palindrome by is the word the same as the reverse word
