@@ -85,9 +85,9 @@ let word = prompt("please a word inside the prompt to find if it is a palindrome
 //  console.log(typeof(palindromeWord));
 //  this is make the loop to check if the word is a palindrome
 //  this is a while loop that checks if they type the word exit to leave the program
- console.log(word);
+ console.log(word.toLowerCase());
  
- while ( word !== "exit") {
+ while ( word.toLowerCase() !== "exit") {
   // this is make a var that will take the word and split it into an array and then reverse it and then join it back together
   let reverseWord = word.split("").reverse().join("");
   // this is a check to see what the word is a palindrome by is the word the same as the reverse word
@@ -99,7 +99,7 @@ let word = prompt("please a word inside the prompt to find if it is a palindrome
     alert("This word is not a palindrome");
   }
 //this will ask the user repeatedly to enter a word until they type exit
-  palindromeWord = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
+  word = prompt("please a word inside the prompt to find if it is a palindrome type 'exit' to leave the program");
 };
 
 // After you notify the user if the string was a palindrome or not, give the user the option of entering another word.
